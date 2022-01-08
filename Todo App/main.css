@@ -1,0 +1,202 @@
+html {
+  height: 100%;
+}
+
+.LOGO {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+body {
+  height: 100%;
+  border: 5px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  height: 400px;
+  width: 300px;
+  background-color: #ffaf49;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.appear {
+  -webkit-animation-name: identifierer;
+          animation-name: identifierer;
+  -webkit-animation-duration: .4s;
+          animation-duration: .4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes identifierer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes identifierer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.field-container {
+  margin-top: -1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.field-container .butt {
+  background-color: #ff8d00;
+  font-size: larger;
+  border: 0px;
+  width: 20%;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.field-container .butt:hover {
+  background-color: #212121;
+  color: white;
+}
+
+.field-container .textar {
+  outline: none;
+  width: 80%;
+  padding: 10px;
+  border: 0px solid grey;
+}
+
+.tasks {
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  height: 294px;
+  border-radius: 5px;
+}
+
+.sample-task {
+  margin-top: 1px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ee6002;
+  border-radius: 5px;
+}
+
+.sample-task p {
+  margin-left: 10px;
+  width: 50%;
+}
+
+.sample-task .chk {
+  background: transparent;
+  border: 0px;
+  outline: none;
+  width: 20%;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.sample-task .chk:hover {
+  background-color: #212121;
+  color: #f5f5f5;
+}
+
+.deleted {
+  -webkit-animation-name: delete_animation;
+          animation-name: delete_animation;
+  -webkit-animation-duration: .4s;
+          animation-duration: .4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes delete_animation {
+  0% {
+    -webkit-transform: translateX(initial);
+            transform: translateX(initial);
+    opacity: 1.0;
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes delete_animation {
+  0% {
+    -webkit-transform: translateX(initial);
+            transform: translateX(initial);
+    opacity: 1.0;
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.rotated {
+  -webkit-animation-name: identifier;
+          animation-name: identifier;
+  -webkit-animation-duration: .4s;
+          animation-duration: .4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes identifier {
+  0% {
+    -webkit-transform: initial;
+            transform: initial;
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@keyframes identifier {
+  0% {
+    -webkit-transform: initial;
+            transform: initial;
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */
