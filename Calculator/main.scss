@@ -1,0 +1,81 @@
+
+html{
+    height:100%;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:10px;
+    height:100%;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .calculator{
+        border:2px solid black;
+        border-radius: 3px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width:300px;
+        
+        .display{
+            overflow:auto;
+            scrollbar-width: thin;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            width:280px;
+            border-radius: 3px;
+            padding:10px;
+            height:40px;
+            display: flex;
+            align-items: flex-end;
+            background-color:#424242;
+            color:#f2f2f2;
+            font-size: 1.5em;
+            
+        }
+    }
+}
+
+.operations-container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px 50px;
+    font-size: 1.5em;
+    gap:1px;
+    div{
+     cursor: default;
+     background-color: #EF6C00;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     display:flex;
+     justify-content: center;
+     &:hover{
+        opacity: .9;
+    }
+    &:active{
+        opacity: .5;
+    }
+     align-items: center;
+    }
+}
+
+.number-container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 70px 70px 70px 70px;
+    gap:1px;
+    cursor: default;
+   div
+   {
+    background-color: #616161;
+    color:#f2f2f2;
+    display:flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 500;
+   &:hover{
+       opacity: .9;
+   }
+
+   }
+}
